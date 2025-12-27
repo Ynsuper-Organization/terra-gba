@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Terra Game Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #0a0e27;
+            --color-bg-secondary: #1a1f3a;
+            --color-text: #e0e6ff;
+            --color-accent: #00ffcc;
+            --color-accent2: #ff2a6d;
+            --color-accent3: #ffd100;
+            --color-card: #1e2442;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: var(--color-text);
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .main-header {
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            border-bottom: 4px solid var(--color-accent);
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 2000;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-pixel {
+            display: flex;
+            gap: 4px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 24px;
+        }
+
+        .logo-pixel span {
+            animation: glow-pulse 2s ease-in-out infinite;
+        }
+
+        .pixel-t { color: var(--color-accent); text-shadow: 0 0 10px var(--color-accent); }
+        .pixel-g { color: var(--color-accent2); text-shadow: 0 0 10px var(--color-accent2); animation-delay: 0.3s; }
+        .pixel-s { color: var(--color-accent3); text-shadow: 0 0 10px var(--color-accent3); animation-delay: 0.6s; }
+
+        @keyframes glow-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .logo-text h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: 20px;
+            font-weight: 900;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-accent2), var(--color-accent3));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo-text .tagline {
+            font-family: 'VT323', monospace;
+            font-size: 14px;
+            color: var(--color-accent);
+            text-shadow: 0 0 5px rgba(0, 255, 204, 0.5);
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-link {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--color-text);
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .nav-link:hover {
+            color: var(--color-accent);
+            text-shadow: 0 0 10px var(--color-accent);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 30px;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, rgba(0, 255, 204, 0.1) 0%, rgba(255, 42, 109, 0.1) 100%);
+            border-radius: 20px;
+            border: 3px solid var(--color-accent);
+            margin-bottom: 50px;
+        }
+
+        .page-header h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: 42px;
+            font-weight: 900;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .page-header p {
+            font-family: 'VT323', monospace;
+            font-size: 18px;
+            color: var(--color-accent);
+        }
+
+        .content-section {
+            background: var(--color-card);
+            border: 2px solid rgba(0, 255, 204, 0.3);
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .content-section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            color: var(--color-accent);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+        }
+
+        .content-section h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 18px;
+            color: var(--color-accent2);
+            margin: 25px 0 15px;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        .content-section ul {
+            margin: 15px 0 15px 25px;
+        }
+
+        .content-section li {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .main-footer {
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            border-top: 4px solid var(--color-accent);
+            margin-top: 60px;
+            padding: 40px 20px 20px;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-section h3 {
+            font-family: 'Orbitron', monospace;
+            font-size: 18px;
+            color: var(--color-accent);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .footer-section h4 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            color: var(--color-accent2);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .footer-section p {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+
+        .footer-section a {
+            display: block;
+            font-size: 13px;
+            color: var(--color-text);
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+            opacity: 0.8;
+        }
+
+        .footer-section a:hover {
+            color: var(--color-accent);
+            padding-left: 10px;
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            font-family: 'VT323', monospace;
+            font-size: 16px;
+            margin: 5px 0;
+            opacity: 0.7;
+        }
+
+        .pixel-love .heart {
+            color: var(--color-accent2);
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        @media (max-width: 768px) {
+            .main-nav {
+                display: none;
+            }
+
+            .page-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 25px;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-pixel">
+                    <span class="pixel-t">T</span><span class="pixel-g">G</span><span class="pixel-s">S</span>
+                </div>
+                <div class="logo-text">
+                    <h1>TERRA GAME STUDIO</h1>
+                    <p class="tagline">Retro Gaming Reimagined</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Games</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>TERMS OF SERVICE</h1>
+            <p>Last Updated: January 2025</p>
+        </div>
+
+        <div class="content-section">
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+                Welcome to Terra Game Studio. By accessing and using our website and services, you accept and agree to be bound by the terms
+                and provisions of this agreement. If you do not agree to these Terms of Service, please do not use our services.
+            </p>
+            <p>
+                These Terms of Service apply to all visitors, users, and others who access or use the service.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>2. Use License</h2>
+            <p>
+                Permission is granted to temporarily download one copy of the materials (games, information, or software) on Terra Game Studio's
+                website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title.
+            </p>
+
+            <h3>Under this license you may not:</h3>
+            <ul>
+                <li>Modify or copy the materials</li>
+                <li>Use the materials for any commercial purpose or for any public display</li>
+                <li>Attempt to decompile or reverse engineer any software contained on our website</li>
+                <li>Remove any copyright or other proprietary notations from the materials</li>
+                <li>Transfer the materials to another person or "mirror" the materials on any other server</li>
+            </ul>
+
+            <p>
+                This license shall automatically terminate if you violate any of these restrictions and may be terminated by Terra Game Studio
+                at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any
+                downloaded materials in your possession whether in electronic or printed format.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>3. User Accounts</h2>
+            <p>
+                When you create an account with us, you must provide information that is accurate, complete, and current at all times.
+                Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account.
+            </p>
+            <p>
+                You are responsible for safeguarding the password that you use to access the service and for any activities or actions
+                under your password. You agree not to disclose your password to any third party.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>4. Intellectual Property</h2>
+            <p>
+                The service and its original content, features, and functionality are and will remain the exclusive property of Terra Game Studio
+                and its licensors. The service is protected by copyright, trademark, and other laws of both the United States and foreign countries.
+            </p>
+            <p>
+                All games, content, trademarks, service marks, trade names, logos, and icons are proprietary to Terra Game Studio or the original
+                rights holders. Nothing on this website should be construed as granting any license or right to use any trademark without the
+                written permission of Terra Game Studio or the respective rights holder.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>5. Disclaimer</h2>
+            <p>
+                The materials on Terra Game Studio's website are provided on an 'as is' basis. Terra Game Studio makes no warranties,
+                expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties
+                or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other
+                violation of rights.
+            </p>
+            <p>
+                Further, Terra Game Studio does not warrant or make any representations concerning the accuracy, likely results, or reliability
+                of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>6. Limitations of Liability</h2>
+            <p>
+                In no event shall Terra Game Studio or its suppliers be liable for any damages (including, without limitation, damages for
+                loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on
+                Terra Game Studio's website, even if Terra Game Studio or a Terra Game Studio authorized representative has been notified
+                orally or in writing of the possibility of such damage.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>7. Prohibited Uses</h2>
+            <p>You agree not to use our services:</p>
+            <ul>
+                <li>In any way that violates any applicable national or international law or regulation</li>
+                <li>To exploit, harm, or attempt to exploit or harm minors in any way</li>
+                <li>To transmit, or procure the sending of, any advertising or promotional material without our prior written consent</li>
+                <li>To impersonate or attempt to impersonate Terra Game Studio, a Terra Game Studio employee, another user, or any other person or entity</li>
+                <li>In any way that infringes upon the rights of others, or in any way is illegal, threatening, fraudulent, or harmful</li>
+                <li>To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the service</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>8. Copyright Policy</h2>
+            <p>
+                We respect the intellectual property rights of others. It is our policy to respond to any claim that content posted on
+                our service infringes on the copyright or other intellectual property rights of any person or entity.
+            </p>
+            <p>
+                If you are a copyright owner, or authorized on behalf of one, and you believe that the copyrighted work has been copied
+                in a way that constitutes copyright infringement, please submit your claim via email to legal@terragamestudio.com with
+                detailed information about the alleged infringement.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>9. Termination</h2>
+            <p>
+                We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability,
+                under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.
+            </p>
+            <p>
+                If you wish to terminate your account, you may simply discontinue using the service or contact us to request account deletion.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>10. Governing Law</h2>
+            <p>
+                These Terms shall be governed and construed in accordance with the laws of the jurisdiction in which Terra Game Studio operates,
+                without regard to its conflict of law provisions.
+            </p>
+            <p>
+                Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>11. Changes to Terms</h2>
+            <p>
+                We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material,
+                we will provide at least 30 days notice prior to any new terms taking effect.
+            </p>
+            <p>
+                By continuing to access or use our service after any revisions become effective, you agree to be bound by the revised terms.
+                If you do not agree to the new terms, you are no longer authorized to use the service.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>12. Contact Information</h2>
+            <p>If you have any questions about these Terms of Service, please contact us:</p>
+            <ul>
+                <li>Email: legal@terragamestudio.com</li>
+                <li>Through our <a href="contact.html" style="color: var(--color-accent); text-decoration: underline;">contact page</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>TERRA GAME STUDIO</h3>
+                <p>Bringing classic gaming experiences to modern platforms. Preserving gaming history, one pixel at a time.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Games</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            <div class="footer-section">
+                <h4>Our Team</h4>
+                <p>Development • Design • QC<br>Marketing • ASO • Product</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Terra Game Studio. All rights reserved.</p>
+            <p class="pixel-love">Made with <span class="heart">♥</span> for retro gaming</p>
+        </div>
+    </footer>
+</body>
+</html>

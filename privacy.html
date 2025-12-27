@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Terra Game Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #0a0e27;
+            --color-bg-secondary: #1a1f3a;
+            --color-text: #e0e6ff;
+            --color-accent: #00ffcc;
+            --color-accent2: #ff2a6d;
+            --color-accent3: #ffd100;
+            --color-card: #1e2442;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: var(--color-text);
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .main-header {
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            border-bottom: 4px solid var(--color-accent);
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 2000;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-pixel {
+            display: flex;
+            gap: 4px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 24px;
+        }
+
+        .logo-pixel span {
+            animation: glow-pulse 2s ease-in-out infinite;
+        }
+
+        .pixel-t { color: var(--color-accent); text-shadow: 0 0 10px var(--color-accent); }
+        .pixel-g { color: var(--color-accent2); text-shadow: 0 0 10px var(--color-accent2); animation-delay: 0.3s; }
+        .pixel-s { color: var(--color-accent3); text-shadow: 0 0 10px var(--color-accent3); animation-delay: 0.6s; }
+
+        @keyframes glow-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .logo-text h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: 20px;
+            font-weight: 900;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-accent2), var(--color-accent3));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo-text .tagline {
+            font-family: 'VT323', monospace;
+            font-size: 14px;
+            color: var(--color-accent);
+            text-shadow: 0 0 5px rgba(0, 255, 204, 0.5);
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-link {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--color-text);
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .nav-link:hover {
+            color: var(--color-accent);
+            text-shadow: 0 0 10px var(--color-accent);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+        }
+
+        .mobile-nav {
+            display: none;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 30px;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, rgba(0, 255, 204, 0.1) 0%, rgba(255, 42, 109, 0.1) 100%);
+            border-radius: 20px;
+            border: 3px solid var(--color-accent);
+            margin-bottom: 50px;
+        }
+
+        .page-header h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: 42px;
+            font-weight: 900;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .page-header p {
+            font-family: 'VT323', monospace;
+            font-size: 18px;
+            color: var(--color-accent);
+        }
+
+        .content-section {
+            background: var(--color-card);
+            border: 2px solid rgba(0, 255, 204, 0.3);
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .content-section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            color: var(--color-accent);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+        }
+
+        .content-section h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 18px;
+            color: var(--color-accent2);
+            margin: 25px 0 15px;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        .content-section ul {
+            margin: 15px 0 15px 25px;
+        }
+
+        .content-section li {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .main-footer {
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            border-top: 4px solid var(--color-accent);
+            margin-top: 60px;
+            padding: 40px 20px 20px;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-section h3 {
+            font-family: 'Orbitron', monospace;
+            font-size: 18px;
+            color: var(--color-accent);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .footer-section h4 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            color: var(--color-accent2);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .footer-section p {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+
+        .footer-section a {
+            display: block;
+            font-size: 13px;
+            color: var(--color-text);
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+            opacity: 0.8;
+        }
+
+        .footer-section a:hover {
+            color: var(--color-accent);
+            padding-left: 10px;
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            font-family: 'VT323', monospace;
+            font-size: 16px;
+            margin: 5px 0;
+            opacity: 0.7;
+        }
+
+        .pixel-love .heart {
+            color: var(--color-accent2);
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        @media (max-width: 768px) {
+            .main-nav {
+                display: none;
+            }
+
+            .page-header h1 {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 25px;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-pixel">
+                    <span class="pixel-t">T</span><span class="pixel-g">G</span><span class="pixel-s">S</span>
+                </div>
+                <div class="logo-text">
+                    <h1>TERRA GAME STUDIO</h1>
+                    <p class="tagline">Retro Gaming Reimagined</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Games</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>PRIVACY POLICY</h1>
+            <p>Last Updated: January 2025</p>
+        </div>
+
+        <div class="content-section">
+            <h2>1. Introduction</h2>
+            <p>
+                Welcome to Terra Game Studio. We are committed to protecting your privacy and ensuring the security of your personal information.
+                This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+            </p>
+            <p>
+                By using our website and services, you agree to the collection and use of information in accordance with this policy.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>2. Information We Collect</h2>
+
+            <h3>2.1 Personal Information</h3>
+            <p>We may collect personally identifiable information that you voluntarily provide to us when you:</p>
+            <ul>
+                <li>Contact us through our contact form</li>
+                <li>Subscribe to our newsletter</li>
+                <li>Download games from our platform</li>
+                <li>Create an account (if applicable)</li>
+            </ul>
+            <p>This information may include your name, email address, and any other information you choose to provide.</p>
+
+            <h3>2.2 Usage Data</h3>
+            <p>We automatically collect certain information when you visit our website, including:</p>
+            <ul>
+                <li>IP address</li>
+                <li>Browser type and version</li>
+                <li>Pages visited and time spent on pages</li>
+                <li>Device information</li>
+                <li>Referring website addresses</li>
+            </ul>
+
+            <h3>2.3 Cookies and Tracking Technologies</h3>
+            <p>
+                We use cookies and similar tracking technologies to track activity on our website and hold certain information.
+                Cookies are files with small amounts of data which may include an anonymous unique identifier.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>3. How We Use Your Information</h2>
+            <p>We use the collected information for various purposes:</p>
+            <ul>
+                <li>To provide and maintain our services</li>
+                <li>To notify you about changes to our website or services</li>
+                <li>To provide customer support</li>
+                <li>To gather analysis or valuable information to improve our services</li>
+                <li>To monitor the usage of our website</li>
+                <li>To detect, prevent and address technical issues</li>
+                <li>To send you newsletters, marketing or promotional materials (with your consent)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>4. Data Security</h2>
+            <p>
+                The security of your data is important to us. We implement appropriate technical and organizational measures to protect
+                your personal information against unauthorized access, alteration, disclosure, or destruction.
+            </p>
+            <p>
+                However, no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to
+                use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>5. Third-Party Services</h2>
+            <p>
+                We may employ third-party companies and individuals to facilitate our services, provide services on our behalf,
+                or assist us in analyzing how our services are used. These third parties may have access to your personal information
+                only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>6. Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access the personal information we hold about you</li>
+                <li>Request correction of inaccurate information</li>
+                <li>Request deletion of your personal information</li>
+                <li>Object to processing of your personal information</li>
+                <li>Request restriction of processing your personal information</li>
+                <li>Data portability</li>
+                <li>Withdraw consent at any time</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>7. Children's Privacy</h2>
+            <p>
+                Our services are not intended for children under the age of 13. We do not knowingly collect personally identifiable
+                information from children under 13. If you are a parent or guardian and you are aware that your child has provided us
+                with personal information, please contact us so that we can take necessary actions.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>8. Changes to This Privacy Policy</h2>
+            <p>
+                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy
+                on this page and updating the "Last Updated" date at the top of this policy.
+            </p>
+            <p>
+                You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective
+                when they are posted on this page.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us:</p>
+            <ul>
+                <li>Email: privacy@terragamestudio.com</li>
+                <li>Through our <a href="contact.html" style="color: var(--color-accent); text-decoration: underline;">contact page</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>TERRA GAME STUDIO</h3>
+                <p>Bringing classic gaming experiences to modern platforms. Preserving gaming history, one pixel at a time.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Games</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            <div class="footer-section">
+                <h4>Our Team</h4>
+                <p>Development • Design • QC<br>Marketing • ASO • Product</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Terra Game Studio. All rights reserved.</p>
+            <p class="pixel-love">Made with <span class="heart">♥</span> for retro gaming</p>
+        </div>
+    </footer>
+</body>
+</html>
